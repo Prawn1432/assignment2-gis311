@@ -41,7 +41,7 @@ airlines = airlines.drop(['Alias','IATA','ICAO','Callsign'],axis = 1)
 # this was just done to obtaina dependent variable!
 airlines2 = airlines.groupby('Country')['Airlines_ID'].count().reset_index()
 # Here is our bar chart!!!
-st.subheader("Here We Also Have An Interesting Bar Chart Of All The Airlines in World!")
+st.subheader("Here We Also Have An Interesting Bar Chart Of a count of all the Different Airlines in World!")
 st.write(" Can You guess which country has the most airlines in the world? ")
 st.bar_chart(airlines2,x = 'Country', y='Airlines_ID')
 st.write(" The united kingdom of course has the most airlines in the world, Now how about that! :)")

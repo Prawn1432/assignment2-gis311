@@ -17,16 +17,17 @@ airlines = airlines.drop(['Alias','IATA','ICAO','Callsign'],axis = 1)
 # now we are going to try clean up our second dataset Airports
 
 airports = pd.read_csv("airports.dat",header = None)
-airports_column_names = ['Airport_ID','Name','City','Country','IATA','ICAO','Latitude','Longitude','Altitude','Timezone','DST','Tz Database Time Zone','Type','Source']
+airports_column_names = ['Airport_ID','Name','City','Country','IATA','ICAO','LATITUDE','LONGITUDE','Altitude','Timezone','DST','Tz Database Time Zone','Type','Source']
 airports.columns = airports_column_names
 #now we drop some of our airports columns
 airports = airports.drop(['DST','Tz Database Time Zone','Type','Source','Timezone'], axis = 1)
+
 
 ##
 
 # here is the out put of all our data frame
 #st.table(airlines)
-st.table(airports)
+st.map(airports,zoom=None, use_container_width=True)
 
 # this is just to check if our dataframe is read correctly 
 st.write('the airlines file has been read')

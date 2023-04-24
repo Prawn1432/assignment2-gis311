@@ -1,5 +1,3 @@
-pip install "git+https://github.com/Prawn1432/assignment2-gis311.git"
-pip install streamlit
 #we first want to import all our libraries
 import pandas as pd 
 import numpy as np 

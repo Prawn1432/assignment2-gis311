@@ -24,11 +24,8 @@ airports.columns = airports_column_names
 airports = airports.drop(['DST','Tz Database Time Zone','Type','Source','Timezone'], axis = 1)
 # here we will add some metrics for airports 
 No_airports = airports['Airport_ID'].max()
-
-
-
 ##
-# here is the out put of all our data frame
+# here is the out put of all our Airports data frame
 #st.table(airlines)
 st.map(airports,zoom=None, use_container_width=True)
 #Here is a caption of our map.
@@ -36,4 +33,11 @@ st.caption('One is able to zoom in to see all possible airports of any particula
 #st.write('One is able to zoom in to see all possible airports of any particular country they would like to investigate!')
 st.metric('The current Maximum Number of Airports in the world is...', No_airports, delta=None, delta_color="normal", help=None, label_visibility="visible")
 
+st.title("Now we are going to look at some interesting facts about planes")
+# first we are going to load in all of our data
+planes = pd.read_csv('planes.dat',header = None)
+# Now wea assign some column names
+plane_column_names = ['Plane Model Name','ISO_code','Daffif_code']
+planes.columns = plane_column_names
+st.table(planes)
 

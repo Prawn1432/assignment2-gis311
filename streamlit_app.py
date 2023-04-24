@@ -6,7 +6,7 @@ import numpy as np
 import geopandas as gpd
 import matplotlib.pyplot as plt
 # here is the title of what we want to show for our application 
-st.title(" libraries not installed but stream lit works")
+st.title("An Overview of All The Major Airports In the World")
 ##
 # here we clean our AIRLINES data frame and se what data is inside of it
 airlines = pd.read_csv('airlines.dat',header=None)
@@ -30,4 +30,4 @@ airports = airports.drop(['DST','Tz Database Time Zone','Type','Source','Timezon
 st.map(airports,zoom=None, use_container_width=True)
 
 # this is just to check if our dataframe is read correctly 
-st.write('the airlines file has been read')
+st.write('One is able to zoom in to see all possible airports of any particular country they would like to investigate!')

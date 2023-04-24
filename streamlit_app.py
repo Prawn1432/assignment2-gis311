@@ -21,13 +21,15 @@ airports_column_names = ['Airport_ID','Name','City','Country','IATA','ICAO','LAT
 airports.columns = airports_column_names
 #now we drop some of our airports columns
 airports = airports.drop(['DST','Tz Database Time Zone','Type','Source','Timezone'], axis = 1)
+# here we will add some metrics for airports 
+No_airports = airports['Airport_ID'].max()
+
 
 
 ##
-
 # here is the out put of all our data frame
 #st.table(airlines)
 st.map(airports,zoom=None, use_container_width=True)
-
-# this is just to check if our dataframe is read correctly 
+st.metric('Number of Airports in the world', No_airports, delta=None, delta_color="normal", help=None, label_visibility="visible")
+#Here is a caption of our map.
 st.write('One is able to zoom in to see all possible airports of any particular country they would like to investigate!')

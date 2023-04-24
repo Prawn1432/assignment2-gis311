@@ -30,6 +30,10 @@ No_airports = airports['Airport_ID'].max()
 # here is the out put of all our data frame
 #st.table(airlines)
 st.map(airports,zoom=None, use_container_width=True)
-st.metric('Number of Airports in the world', No_airports, delta=None, delta_color="normal", help=None, label_visibility="visible")
 #Here is a caption of our map.
-st.write('One is able to zoom in to see all possible airports of any particular country they would like to investigate!')
+st.caption('One is able to zoom in to see all possible airports of any particular country they would like to investigate!', unsafe_allow_html=False, *, help=None)
+#st.write('One is able to zoom in to see all possible airports of any particular country they would like to investigate!')
+st.write('The maximum number of airports in the world would be displayed below)
+st.metric('Number of Airports in the world', No_airports, delta=None, delta_color="normal", help=None, label_visibility="visible")
+
+

@@ -1,6 +1,6 @@
 pandas
 geopandas
 streamlit
-matplotlib.pyplot
+matplotlib
 numpy
 streamlit

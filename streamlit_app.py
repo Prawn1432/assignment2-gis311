@@ -6,7 +6,8 @@ import numpy as np
 import geopandas as gpd
 import matplotlib.pyplot as plt
 # here is the title of what we want to show for our application 
-st.title("MAGIC FLIGHTS THE FLYING APPLICATION!!!")
+st.title("MAGIC FLIGHTS")
+st.write("Morning kids, TODAY WE ARE GOING TO LEARN ALL ABOUT PLANES :)!!!!")
 st.subheader("Here is our map of the world showing all the possible airports. Take a gander and see which one is closest to your Home!")
 st.caption("!!!for kids educational purposes only!!!")
 ###################################################################################

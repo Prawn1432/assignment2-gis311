@@ -20,7 +20,7 @@ airports = pd.read_csv("airports.dat",header = None)
 ##
 
 # here is the out put of all our data frame
-st.table(airlines)
+#st.table(airlines)
 st.table(airports)
 
 # this is just to check if our dataframe is read correctly 

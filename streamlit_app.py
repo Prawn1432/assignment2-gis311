@@ -8,4 +8,4 @@ import numpy as np
 from bs4 import BeautifulSoup
 import csv as csv
 import streamlit as st
-print("All libraries are installed")
+st.title(" all the libraries are installed")

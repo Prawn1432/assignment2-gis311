@@ -11,6 +11,6 @@ airlines = pd.read_csv('airlines.dat',header=None)
 airlines_column_names = ['Airlines','Alias','IATA','ICAO','Callsign','Country','Active']
 airlines.columns = airlines_column_names
 #now we want to only keep the coumns we interested in 
-airlines = airlines.drop(['Alias','IATA','ICAO','Callsign'],axis = 1)
+#airlines = airlines.drop(['Alias','IATA','ICAO','Callsign'],axis = 1)
 st.write('the airlines file has been read')
 

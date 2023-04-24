@@ -45,12 +45,8 @@ st.write(" Can You guess which country has the most airlines in the world? ")
 st.bar_chart(airlines2,x = 'Country', y='Airlines_ID')
 st.write(" The united kingdom of course has the most airlines in the world, Now how about that! :)")
 ########################################################
-# now we are going to try clean up our second dataset Airports
-st.title("Now we are going to look at some interesting facts about planes")
-# first we are going to load in all of our PLanes data
-planes = pd.read_csv('planes.dat',header = None)
-#Now wea assign some column names
-plane_column_names = ['Plane Model Name','ISO_code','Daffif_code']
-planes.columns = plane_column_names
-st.table(airports)
+# now we are going to create another bar chart.
+airlines3 = airlines.groupby('Country')['Active']Count().reset_index()
+st.barchart(airlines3,x = 'Country',y ='Active')
+
 

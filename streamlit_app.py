@@ -47,6 +47,12 @@ st.write(" The united kingdom of course has the most airlines in the world, Now 
 ########################################################
 # now we are going to create another bar chart.
 airlines3 = airlines.groupby('Country')['Active'].count().reset_index()
-st.barchart(airlines3,x = 'Country',y =['Active'].count('Y'))
+bar_chart = alt.Chart(airlines3).mark_bar().encode(
+    x='Country',
+    y='Active'
+)
+
+st.altair_chart(bar_chart, use_container_width=True)
+
 
 

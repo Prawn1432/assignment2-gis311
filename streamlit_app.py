@@ -39,11 +39,10 @@ airlines = airlines.drop(['Alias','IATA','ICAO','Callsign'],axis = 1)
 # we want to create a bar graph of all the planes that occur in a certain country 
 # this was just done to obtaina dependent variable!
 airlines2 = airlines.groupby('Country')['Airlines_ID'].count().reset_index()
-airlines3 = airlines2.sort_values('Airlines_ID',ascending = true)
 # Here is our bar chart!!!
 st.subheader("Here We Also Have An Interesting Bar Chart Of All The Airlines in World!")
 st.write(" Can You guess which country has the most airlines in the world? ")
-st.bar_chart(airlines3,x = 'Country', y='Airlines_ID')
+st.bar_chart(airlines2,x = 'Country', y='Airlines_ID')
 st.write(" The united kingdom of course has the most airlines in the world, Now how about that! :)")
 
 ########################################################

@@ -43,14 +43,14 @@ airlines2 = airlines.groupby('Country')['Airlines_ID'].count().reset_index()
 # Here is our bar chart!!!
 st.subheader("Here We Also Have An Interesting Bar Chart Of All The Airlines in World!")
 st.write(" Can You guess which country has the most airlines in the world? ")
-st.bar_chart(airlines2,x = 'Country', y='Airlines_ID')
+st.bar_chart(airlines2,x = 'Country', y='Airlines_ID'+" count")
 st.write(" The united kingdom of course has the most airlines in the world, Now how about that! :)")
 ########################################################
 # now we are going to create another bar chart of our airports dataframe.
 # we are going to show in what countries the highest plane will fly 
 st.subheader("Here we have our next bar chart of Countries vs Altitude")
 st.write("Can you guess which country's planes are flying the highest in the world?")
-st.bar_chart(airports,x='Country',y = 'Altitude')
+st.bar_chart(airports,x='Country',y = 'Altitude'+"in feet")
 st.title("The country with the plane that fly's with the greatest altitude would be Uruguay!!")
 st.write(" I hope you kids have all learnt a valueable lesson today about flying the skies with today's modern airplanes!!")
 

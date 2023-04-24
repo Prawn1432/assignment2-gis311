@@ -34,6 +34,6 @@ st.map(airports,zoom=None, use_container_width=True)
 #Here is a caption of our map.
 st.caption('One is able to zoom in to see all possible airports of any particular country they would like to investigate!', unsafe_allow_html=False,help=None)
 #st.write('One is able to zoom in to see all possible airports of any particular country they would like to investigate!')
-st.metric('The current Maximum Number of Airports in the world!!!', No_airports, delta=None, delta_color="normal", help=None, label_visibility="visible")
+st.metric('The current Maximum Number of Airports in the world is...', No_airports, delta=None, delta_color="normal", help=None, label_visibility="visible")
 
 

@@ -1,6 +1,6 @@
 #pip install git+https://github.com/pytorch/pytorch.git@v1.9.0
 import streamlit as st
-we first want to import all our libraries
+#we first want to import all our libraries
 import pandas as pd 
 import numpy as np 
 import geopandas as gpd

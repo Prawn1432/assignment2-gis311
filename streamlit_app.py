@@ -52,5 +52,5 @@ planes = pd.read_csv('planes.dat',header = None)
 #Now wea assign some column names
 plane_column_names = ['Plane Model Name','ISO_code','Daffif_code']
 planes.columns = plane_column_names
-st.table(planes)
+st.table(airports)
 

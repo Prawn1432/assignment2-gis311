@@ -1,3 +1,5 @@
+pip install geopandas
+pip install streamlit
 #we first want to import all our libraries
 import pandas as pd 
 import numpy as np 

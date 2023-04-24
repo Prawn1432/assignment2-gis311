@@ -6,7 +6,8 @@ import numpy as np
 import geopandas as gpd
 import matplotlib.pyplot as plt
 # here is the title of what we want to show for our application 
-st.title("An Overview of All The Major Airports In the World")
+st.title("MAGIC FLIGHTS THE FLYING APPLICATION!!!")
+st.subheader("Here is our map of the world showing all the possible airports take a gander and see which one is closesed to your Home!")
 ##
 # here we clean our AIRLINES data frame and se what data is inside of it
 airlines = pd.read_csv('airlines.dat',header=None)

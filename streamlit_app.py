@@ -7,5 +7,5 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 
 st.title(" libraries not installed but stream lit works")
-airlines = pd.read_csv('airlines.dat'header=None)
+airlines = pd.read_csv('airlines.dat',header=None)
 st.write('the airlines file has been read')

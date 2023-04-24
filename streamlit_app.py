@@ -39,14 +39,18 @@ airlines = airlines.drop(['Alias','IATA','ICAO','Callsign'],axis = 1)
 # this was just done to obtaina dependent variable!
 airlines2 = airlines.groupby('Country')['Airlines_ID'].count().reset_index()
 # Here is our bar chart!!!
+st.subheader("Here We Also Have An Interesting Bar Chart Of All The Airlines in World!")
+st.write(" Can You guess which country has the most airlines in the world")
 st.bar_chart(airlines2,x = 'Country', y='Airlines_ID')
+st.write(" The united kingdom of course has the most airlines in the world, Now how about that! :)")
+
 ########################################################
 # now we are going to try clean up our second dataset Airports
 st.title("Now we are going to look at some interesting facts about planes")
 # first we are going to load in all of our data
-planes = pd.read_csv('planes.dat',header = None)
+#planes = pd.read_csv('planes.dat',header = None)
 # Now wea assign some column names
-plane_column_names = ['Plane Model Name','ISO_code','Daffif_code']
-planes.columns = plane_column_names
-st.table(planes)
+#plane_column_names = ['Plane Model Name','ISO_code','Daffif_code']
+#planes.columns = plane_column_names
+#st.table(planes)
 

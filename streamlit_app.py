@@ -51,7 +51,7 @@ st.write(" The united kingdom of course has the most airlines in the world, Now 
 st.subheader("Here we have our next bar chart of Countries vs Altitude")
 st.write("Can you guess which country's plane flies at the highest in the world in feet?")
 st.bar_chart(airports,x='Country',y = 'Altitude')
-st.title("The country with the plane that flies with the Largest altitude would be Uruguay!!")
+st.title("The country with the plane that flies with the highest altitude would be Uruguay!!")
 st.write(" I hope you kids have all learnt a valueable lesson today about flying the skies with today's modern airplanes!!")
 
 

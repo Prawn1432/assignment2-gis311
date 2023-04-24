@@ -45,8 +45,13 @@ st.write(" Can You guess which country has the most airlines in the world? ")
 st.bar_chart(airlines2,x = 'Country', y='Airlines_ID')
 st.write(" The united kingdom of course has the most airlines in the world, Now how about that! :)")
 ########################################################
-# now we are going to create another bar chart.
+# now we are going to create another bar chart of our airports dataframe.
+# we are going to show in what countries the highest plane will fly 
+st.subheader("Here we have our next bar chart of Countries vs Altitude")
+st.write("Can you guess which country's planes are flying the highest in the world?")
 st.bar_chart(airports,x='Country',y = 'Altitude')
+st.title("The country with the plane that fly's with the greatest altitude would be Uruguay!!")
+st.write(" I hope you kids have all learnt a valueable lesson today about flying the skies with today's modern airplanes!!")
 
 
 
